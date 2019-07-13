@@ -1,6 +1,6 @@
 {
     "terminal.integrated.env.osx": {
-        "PATH": "/Users/stefan/.platformio/penv/bin:/Users/stefan/.platformio/penv:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/stefan/work/apache-maven-3.6.0/bin:/Users/stefan/work/graalvm/Contents/Home/bin",
+        "PATH": "/Users/stefan/.platformio/penv/bin:/Users/stefan/.platformio/penv:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/CrossPack-AVR/bin",
         "PLATFORMIO_CALLER": "vscode"
     }
 }

@@ -8,13 +8,13 @@
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 
 /*Put your SSID & Password*/
-const char* ssid = "YourNetworkName";  // Enter SSID here
-const char* password = "YourPassword";  //Enter Password here
+const char* ssid = "Temple";  // Enter SSID here
+const char* password = "temple0815!";  //Enter Password here
 
 ESP8266WebServer server(80);
 
 // DHT Sensor
-uint8_t DHTPin = D8; 
+uint8_t DHTPin = D7;
                
 // Initialize DHT sensor.
 DHT dht(DHTPin, DHTTYPE);                
@@ -54,7 +54,11 @@ String SendHTML(float Temperaturestat,float Humiditystat){
 
 void handle_OnConnect() {
   Temperature = dht.readTemperature(); // Gets the values of the temperature
+  Serial.print("Temp: ");
+  Serial.println(Temperature);
   Humidity = dht.readHumidity(); // Gets the values of the humidity 
+  Serial.print("Hum: ");
+  Serial.println(Humidity);
   server.send(200, "text/html", SendHTML(Temperature,Humidity)); 
 }
  
