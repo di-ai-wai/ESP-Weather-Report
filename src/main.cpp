@@ -29,7 +29,7 @@ void handle_NotFound(){
 String SendHTML(float Temperaturestat,float Humiditystat){
   String ptr = "<!DOCTYPE html> <html>\n";
   ptr +="<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
-  ptr +="<title>ESP8266 Weather Report</title>\n";
+  ptr +="<title>ESP8266 Wetter Report</title>\n";
   ptr +="<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n";
   ptr +="body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;}\n";
   ptr +="p {font-size: 24px;color: #444444;margin-bottom: 10px;}\n";
@@ -37,12 +37,12 @@ String SendHTML(float Temperaturestat,float Humiditystat){
   ptr +="</head>\n";
   ptr +="<body>\n";
   ptr +="<div id=\"webpage\">\n";
-  ptr +="<h1>ESP8266 NodeMCU Weather Report</h1>\n";
+  ptr +="<h1>ESP8266 NodeMCU Wetter Report</h1>\n";
   
-  ptr +="<p>Temperature: ";
+  ptr +="<p>Temperatur  : ";
   ptr +=(int)Temperaturestat;
   ptr +="°C</p>";
-  ptr +="<p>Humidity: ";
+  ptr +="<p>Feuchtigkeit: ";
   ptr +=(int)Humiditystat;
   ptr +="%</p>";
   
